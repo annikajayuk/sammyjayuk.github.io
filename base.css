@@ -6,7 +6,7 @@
 html, body {
 	margin: 0px;
 	font: 17px Lato, "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
-	background: url(base.css-assets/mainbg.png) black;
+	background: url(base.css-assets/mainbg.png) center repeat-y black;
 	color: white;
 }
 
@@ -48,7 +48,7 @@ div#header a:hover {
 
 
 div#main {
-	width: 960px;
+	width: 928px;
 	margin: auto;
 	background-color: hsl(0, 0%, 97%);
 	color: hsl(0, 0%, 10%);
