@@ -41,7 +41,7 @@ div#header a:visited {
 	text-decoration: none;
 }
 
-div#header a:link:hover {
+div#header a:hover {
 	color: hsl(220, 100%, 75%);
 	background-color: white;
 }
