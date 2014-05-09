@@ -33,6 +33,11 @@ div#header a:link {
 	text-decoration: none;
 }
 
+div#header a:link:visited {
+	color: white;
+	text-decoration: none;
+}
+
 div#header a:link:hover {
 	color: hsl(220, 100%, 75%);
 	background-color: white;
