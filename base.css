@@ -33,7 +33,7 @@ div#header a:link {
 	text-decoration: none;
 }
 
-div#header a:link:visited {
+div#header a:visited {
 	color: white;
 	text-decoration: none;
 }
