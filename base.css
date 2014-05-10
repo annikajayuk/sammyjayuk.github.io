@@ -6,16 +6,23 @@
 html, body {
 	margin: 0px;
 	font: 17px Lato, "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
-	background-color: black;
+	background-color: hsl(0, 0%, 90%);
 	color: white;
 }
 
 a:link {
-	color: hsl(220, 100%, 75%);
+	color: hsl(220, 100%, 63%);
 	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
 }
 
 a:link:hover {
+	color: hsl(220, 80%, 50%);
+	transition-delay: 0s;
+	transition-duration: 0.15s;
+	transition-property: all;
+	/*transition-timing-function: ease-in;*/
 	text-decoration: underline;
 }
 
@@ -25,7 +32,6 @@ a:link:hover {
 
 
 div#main-tallbg {
-	/*background-color: #28fa3b;*/
 	height: 100%;
 	width: 100%;
 	z-index: -1;
@@ -41,14 +47,22 @@ div#main-tallbg div {
 
 
 div#header {
-	background-color: gray;
-	color: white;
-	padding: 8px 8px 8px;
+	background: -webkit-linear-gradient(bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 98%) 100%) hsl(0, 0%, 97%);
+	background: -moz-linear-gradient(bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 98%) 100%) hsl(0, 0%, 97%);
+	background: -ms-linear-gradient(bottom, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 98%) 100%) hsl(0, 0%, 97%);
+	background: linear-gradient(to top, hsl(0, 0%, 90%) 0%, hsl(0, 0%, 98%) 100%) hsl(0, 0%, 97%);
+	color: black;
+	padding: 0px 8px;
 	font-size: 125%;
 }
 
+div#header > * {
+	padding: 4px 0px;
+	display: inline-block;
+}
+
 div#header a:link {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -58,8 +72,11 @@ div#header a:visited {
 }
 
 div#header a:hover {
-	color: hsl(220, 100%, 75%);
-	background-color: white;
+	color: hsl(220, 100%, 63%);
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: color;
+	/*transition-timing-function: ease-in;*/
 }
 
 
@@ -67,7 +84,7 @@ div#main {
 	width: 928px;
 	margin: auto;
 	background-color: hsl(0, 0%, 97%);
-	color: hsl(0, 0%, 10%);
+	color: hsl(0, 0%, 8%);
 	padding: 1px 16px;
 	font-weight: 300;
 }
