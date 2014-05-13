@@ -44,7 +44,7 @@ a.hovertip + .hovertip-tip * {
 }
 
 a.hovertip:hover + .hovertip-tip {
-	display: inline-block;
+	display: inline;
 	position: absolute;
 	font-weight: normal;
 	/*background-color: hsl(0, 0%, 8%);*/
