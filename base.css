@@ -13,18 +13,23 @@ html, body {
 
 a:link {
 	color: hsl(220, 100%, 63%);
+	transition-delay: 0s;
+	transition-duration: 0.2s;
+	transition-property: all;
 	text-decoration: none;
 	font-weight: normal;
 	font-style: normal;
+	border-bottom: 1px solid hsla(220, 100%, 63%, 0);
 }
 
 a:link:hover, a:visited:hover {
 	color: hsl(220, 80%, 50%);
 	transition-delay: 0s;
-	transition-duration: 0.15s;
+	transition-duration: 0.35s;
 	transition-property: all;
 	/*transition-timing-function: ease-in;*/
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	border-bottom: 1px solid hsla(220, 80%, 50%, 1);
 }
 
 a.hovertip + .hovertip-tip {
