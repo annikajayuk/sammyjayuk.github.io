@@ -2,30 +2,25 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Samuel Jacobs</title> 
-		<link rel="stylesheet" href="../base.css" />
+		<title>{{ page.title }} — Samuel Jacobs</title> 
+		<link rel="stylesheet" href="/base.css" />
 	</head>
 	<body>
 		<div id="main-tallbg"><div></div></div>
 		<div id="header">
 			<div id="header-content">
-				<a href="/" class=""><span>Sam <span class="weight-light">Jacobs</span></span></a>
+				<a href="/" class="{% if page.navname == 'home' %} header-current{% endif %}"><span>Sam <span class="weight-light">Jacobs</span></span></a>
 				<ul id="header-links">
 					<li><span class="weight-light header-link-category">MythTV themes:</span></li>
 					<li>
-						<a class="hovertip" href="/barry" title="">Barry</a>
+						<a class="hovertip{% if page.navname == 'barry' %} header-current{% endif %}" href="/barry" title="">Barry</a>
 						<span class="hovertip-tip"><span>Barry, a theme for MythTV<img src="http://files.gandi.ws/gandi32984/image/preview.png" alt="" width="380"/></span></span>
 					</li>
 					<li>
-						<a class="hovertip header-current" href="/anita" title="">Anita</a>
+						<a class="hovertip{% if page.navname == 'anita' %} header-current{% endif %}" href="/anita" title="">Anita</a>
 						<span class="hovertip-tip"><span>Anita, another theme for MythTV<img src="https://raw.githubusercontent.com/sammyjayuk/Anita_dev/master/themepreviews/preview.png" alt="" width="380" /></span></span>
 					</li>
 				</ul>
 				<!--<a href="https://twitter.com/sammyjayuk"><img src="" height="21" alt="Twitter icon" /></a>-->
 			</div>
 		</div>
-		<div id="main">
-			<p>nothing for Anita here yet (<a href="https://github.com/sammyjayuk/Anita_dev">see GitHub</a>)</p>
-		</div>
-	</body>
-</html>
